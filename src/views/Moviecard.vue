@@ -1,17 +1,15 @@
 <template>
-  <div class="home">
-    <h1>Home</h1>
+  <div class="moviecard">
+    <h1>Movielist</h1>
   </div>
 </template>
 
 <script>
 
-
 export default {
-  name: "home",
+  name: "moviecard",
   components: {
     
-    
   },
-}
+};
 </script>
