@@ -1,29 +1,29 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router';
+import Home from '@/components/HomePage.vue'
+import AddMovie from '@/components/AddMovie.vue'
+import MovieList from '@/components/MovieList.vue'
 
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/addmovie",
-    name: "Addmovie",
-    component: () =>
-      import("../views/Addmovie.vue"),
-  },
-  {
-    path: "/moviecard",
-    name: "Moviecard",
-    component: () =>
-      import("../views/Moviecard.vue")
-  }
-];
 
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
-});
+
+Vue.use(VueRouter)
+
+const router = new VueRouter({
+  routes: [
+    {
+      path: "/",
+      component: Home,
+    },
+    {
+      path: "/addMovie",
+      component: AddMovie
+    },
+    {
+      path: "/movieList",
+      component: MovieList
+    }
+  ]
+})
+
 
 export default router;

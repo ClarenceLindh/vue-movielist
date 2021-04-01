@@ -1,17 +1,29 @@
 <template>
-<div id="movielist">
-    <h2>movieList</h2>
-    <ul>
-        <li> </li>
-    </ul>
+<div class="movie-list">
+    <h2>Movie List</h2>
+    
 </div>
   
 </template>
 
 <script>
-export default {
+import MovieCard from "./MovieCard"
 
+export default {
+    name: 'movieListComponent',
+
+    components: {
+        MovieCard,
+    },
+
+
+    computed: {
+        movies(){
+            return this.$store.state.movies
+        },
+    },
 }
+
 </script>
 
 <style>

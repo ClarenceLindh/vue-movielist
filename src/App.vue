@@ -1,31 +1,29 @@
 <template>
+  <div id="app">
 
-<h1 id="title">{{ sitetitle }}</h1>
-  <Navbar/>
-  <router-view />
+    <h1 id="header">{{ sitetitle }}</h1>
+      <Navbar/>
+      <router-view />
+
+  </div>
 </template>
 
+
+
 <script>
+
 import Navbar from './components/Navbar.vue'
 
 
 export default({
-  name: "App",
   components: {
     Navbar,
-    
   },
-  data(){
-      return{
-        sitetitle: 'Movielist',
-        
-        
-      }
-  },
+
   methods:{
-    
   }
 })
+
 </script>
 
 
