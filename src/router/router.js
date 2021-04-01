@@ -1,23 +1,24 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import { createRouter, createWebHashHistory } from "vue-router"
+import Home from "../components/HomePage.vue"
+import AddMovie from "../components/AddMovie.vue"
+import MovieList from "../components/MovieList.vue"
 
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "homePage",
     component: Home,
   },
   {
-    path: "/addmovie",
-    name: "Addmovie",
-    component: () =>
-      import("../views/Addmovie.vue"),
+    path: "/addMovie",
+    name: "addMovie",
+    component: AddMovie,
+    
   },
   {
-    path: "/moviecard",
-    name: "Moviecard",
-    component: () =>
-      import("../views/Moviecard.vue")
+    path: "/movieList",
+    name: "movieList",
+    component: MovieList,
   }
 ];
 
