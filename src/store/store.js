@@ -18,14 +18,16 @@ export default createStore({
       }
     ]
   },
-  mutations: {},
-  actions: {},
-  modules: {
+  mutations: {
     removeMovie(state, movieToRemove){
       state.movies = state.movies.filter((movie) => movieToRemove !== movie)
+      alert(movieToRemove.title + " removed from the list!")
     },
     addNewMovie(state, movieToAdd){
       state.movies.unshift(movieToAdd)
+      alert(movieToAdd.title + " added to the list!")
     }
   },
+  actions: {},
+  modules: {},
 });

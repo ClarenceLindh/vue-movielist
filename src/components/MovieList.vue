@@ -9,11 +9,9 @@
     </div>
     
 </div>
-  
 </template>
 
 <script>
-
 import MovieCard from "./MovieCard"
 
 export default {
@@ -30,6 +28,7 @@ export default {
 
 }
 </script>
+
 
 <style>
 

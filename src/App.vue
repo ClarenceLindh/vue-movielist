@@ -1,8 +1,8 @@
 <template>
-
 <h1 id="title">{{ sitetitle }}</h1>
   <Navbar/>
   <router-view />
+  
 </template>
 
 <script>

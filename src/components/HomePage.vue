@@ -1,5 +1,8 @@
 <template>
-<h2>Home</h2>
+<div id="wrapper">
+    <h2>Keep track of your favorie movies!</h2>
+</div>
+
 
 </template>
 

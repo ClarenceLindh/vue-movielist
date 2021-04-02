@@ -3,7 +3,7 @@
     <div class="title-rating-wrapper">
         <span class="title">{{movie.title}}</span>
         <span>{{movie.genre}}</span>
-        <span class="rating">{{movie.rating}}</span>
+        <span class="rating">{{movie.rating}}/5</span>
     </div>
     <br>
     <div class="description-wrapper">
@@ -15,7 +15,9 @@
 <script>
 export default {
     name: "movieCard",
+
     props: ["movie"],
+
     methods: {
         deleteMovie(){
             this.$store.commit("removeMovie", this.movie)

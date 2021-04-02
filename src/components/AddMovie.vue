@@ -27,7 +27,7 @@
                 >
                 </textarea>
             </div>
-            <button class="add-button" @click=createMovie>Add To List</button>
+            <button @click="createMovie">Add To List</button>
         </form>
     </div>
 </template>
@@ -38,7 +38,7 @@ export default {
     data() {
         return {
             title:"",
-            rating: "0",
+            rating: "1",
             genre: "",
             description: "",
             genres: [
@@ -68,5 +68,7 @@ export default {
 </script>
 
 <style>
+
+
 
 </style>
