@@ -1,4 +1,5 @@
 <template>
+    <div id="wapp">
     <div class="add-movie">
         <form @submit.prevent="createMovie">
             <div class="title-wrapper">
@@ -29,6 +30,7 @@
             </div>
             <button @click="createMovie">Add To List</button>
         </form>
+    </div>
     </div>
 </template>
 
@@ -67,8 +69,34 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
+*{
+    background-color: black;
+}
+.add-movie {
+  
+  margin-bottom: 25px;
+  background: linear-gradient(180deg, rgb(0,0,0) 0%, rgb(16,16,16) 106%);
+}
 
+div {
+  margin-top: 10px;
+  
+  
+}
+
+form {
+  padding: 20px;  
+  
+}
+
+button {
+  width: 242px;
+  color: black;
+  border: 4px solid black;
+  background-color: white;
+  padding: 5px;
+}
 
 </style>

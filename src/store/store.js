@@ -15,6 +15,12 @@ export default createStore({
         rating: 4,
         genre: "Science Fiction",
         description: "Darth Vader is your father"
+      },
+      {
+        title: "Lorem",
+        rating: 2,
+        genre: "Drama",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dicta et quibusdam at animi aliquam, provident sequi officia dolorem facilis. Maxime reiciendis ut facilis rerum porro consequuntur expedita. Voluptate molestias pariatur earum eveniet quia optio vel recusandae deleniti possimus inventore? Nihil perferendis saepe sunt officia cum fugiat praesentium voluptas numquam veniam eligendi commodi, iste ab quidem possimus aperiam voluptatibus nulla quia ullam nemo consequatur dolore quibusdam. Odio nobis numquam ipsum debitis nostrum placeat laboriosam maxime ipsa, voluptatibus fuga, magnam adipisci asperiores eos dolores sequi quidem. Provident at accusantium fugiat, ea beatae placeat quas totam alias error impedit molestias architecto corrupti!"
       }
     ]
   },

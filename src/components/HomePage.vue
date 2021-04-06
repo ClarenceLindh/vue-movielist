@@ -1,18 +1,31 @@
 <template>
 <div id="wrapper">
-    <h2>Keep track of your favorie movies!</h2>
+    <AddMovie/>
+    <MovieList/>
 </div>
 
 
 </template>
 
 <script>
-export default {
-    name: "homePage",
+import AddMovie from './AddMovie'
+import MovieList from './MovieList'
 
+export default {
+  name: "homePage",
+  components: { AddMovie,
+  MovieList
+  },
 }
 </script>
 
-<style>
+<style scoped>
 
+
+
+#wrapper {
+  padding-top: 25px;
+  padding-bottom: 100px;
+  color: black;
+}
 </style>
