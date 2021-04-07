@@ -1,7 +1,7 @@
 <template>
     <div id="wapp">
     <div class="add-movie">
-        <form @submit.prevent="createMovie">
+        <form @submit.prevent="addMovie">
             <div class="title-wrapper">
                 <h3>Title</h3>
                 <input id="title" type="text" v-model="title" />
